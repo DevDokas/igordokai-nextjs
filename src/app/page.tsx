@@ -1,28 +1,35 @@
 'use client';
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+
+import profileImage from '@/assets/profile.png';
 
 import AnimatedBackground from '../components/animatedBackground/AnimatedBackground';
+import { ProfileImage, TypeAnimate } from './pageStyle';
 
 export default function Home(): JSX.Element {
   return (
     <div>
-      <h1>Base NextJs</h1>
-      <TypeAnimation
+      <ProfileImage src={profileImage.src} alt="" />
+      <TypeAnimate
         sequence={[
           // Same substring at the start will only be typed out once, initially
-          'We produce food for Mice',
+          'Bem-vindos!',
           1000, // wait 1s before replacing "Mice" with "Hamsters"
-          'We produce food for Hamsters',
+          'Eu sou o Igor Dokai',
           1000,
-          'We produce food for Guinea Pigs',
+          'Eu sou Desenvolvedor Frontend',
           1000,
-          'We produce food for Chinchillas',
+          'Eu sou Desenvolvedor Backend',
+          1000,
+          'Eu sou Desenvolvedor Fullstack',
+          1000,
+          'Eu sou Desenvolvedor Mobile',
+          1000,
+          'Como posso te ajudar hoje? 😉',
           1000
         ]}
         wrapper="span"
         speed={50}
-        style={{ fontSize: '2em', display: 'inline-block' }}
         repeat={Infinity}
       />
       <AnimatedBackground />

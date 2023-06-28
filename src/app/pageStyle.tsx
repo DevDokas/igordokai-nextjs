@@ -8,7 +8,7 @@ export const ProfileImage = styled.img`
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 0.1vh solid ${color.darkFont};
+  border: 0.5vh solid ${color.whiteFont};
   border-radius: 50%;
   height: 20vh;
 `;

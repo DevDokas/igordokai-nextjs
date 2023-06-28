@@ -22,4 +22,9 @@ export const NavbarLink = styled(Link)`
   padding: 0.5vh 0.5vw 0.5vh 0.5vw;
   text-decoration: none;
   color: ${color.whiteFont};
+  transition: 100ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

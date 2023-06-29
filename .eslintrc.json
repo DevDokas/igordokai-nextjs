@@ -59,6 +59,7 @@
         "@typescript-eslint/triple-slash-reference": "off",
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-namespace": "off",
+        "@next/next/no-page-custom-font": "off",
         "styled-components-a11y/rule-name": 0,
         "import/extensions": [
           "error",

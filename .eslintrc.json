@@ -18,7 +18,9 @@
       }
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:@next/next/recommended",
         "standard-with-typescript",
         "airbnb-typescript/base",
         "plugin:styled-components-a11y/recommended",
@@ -30,7 +32,10 @@
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": ["./tsconfig.json"]
+        "project": ["./tsconfig.json"],
+        "ecmaFeatures": {
+          "jsx": true
+        }
     },
     "plugins": [
         "react",
@@ -41,6 +46,8 @@
         "eslint-plugin-import-helpers"
     ],
     "rules": {
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
         "prettier/prettier": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",

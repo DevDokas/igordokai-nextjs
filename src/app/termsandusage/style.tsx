@@ -7,15 +7,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 13vh;
-`;
-
-export const AppsSection = styled.section`
-  height: 80vh;
-  width: 60vw;
-  border: 0;
-  border-radius: 3vh;
+  justify-content: center;
+  height: 60vh;
+  width: 50vw;
   background-color: ${color.sectionColor};
+  overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
-export const AppContainer = styled.div``;
+export const Paragraph = styled.p`
+  text-indent: 1vw;
+`;

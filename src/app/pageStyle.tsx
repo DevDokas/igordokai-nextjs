@@ -22,3 +22,17 @@ export const TypeAnimate = styled(TypeAnimation)`
   display: inline-block;
   color: ${color.whiteFont};
 `;
+
+export const SocialMediasContainer = styled.div`
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  gap: 1vw;
+  transform: translate(-50%, -50%);
+`;
+
+export const LinkSocialMedia = styled.a`
+  color: ${color.whiteFont};
+  font-size: 2.5vh;
+`;

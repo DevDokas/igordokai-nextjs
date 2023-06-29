@@ -13,4 +13,25 @@ export const Body = styled.body`
   );
   font-family: 'Ubuntu', sans-serif;
   overflow: hidden;
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #858585 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0.7vw;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ${color.sectionColor};
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #858585;
+    border-radius: 10px;
+  }
 `;

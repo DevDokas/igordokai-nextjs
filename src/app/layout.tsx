@@ -7,7 +7,7 @@ export default function RootLayout({
   children
 }: {
   children: React.ReactNode;
-}): any {
+}): JSX.Element {
   return (
     <html lang="pt-BR">
       <head>

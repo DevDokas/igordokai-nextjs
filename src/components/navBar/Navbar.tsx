@@ -15,6 +15,8 @@ export default function Navbar(): JSX.Element {
   const [portfolioScale, setPortfolioScale] = useState<string>('1');
   const [termsUseColor, setTermsUseColor] = useState<string>(color.navButtonI);
   const [termsUseScale, setTermsUseScale] = useState<string>('1');
+  const [contactColor, setContactColor] = useState<string>(color.navButtonI);
+  const [contactScale, setContactScale] = useState<string>('1');
 
   return (
     <Container>
@@ -30,6 +32,8 @@ export default function Navbar(): JSX.Element {
             setPortfolioScale('1');
             setTermsUseColor(color.navButtonI);
             setTermsUseScale('1');
+            setContactColor(color.navButtonI);
+            setContactScale('1');
           }}
           href={'/'}
         >
@@ -50,6 +54,8 @@ export default function Navbar(): JSX.Element {
             setPortfolioScale('1');
             setTermsUseColor(color.navButtonI);
             setTermsUseScale('1');
+            setContactColor(color.navButtonI);
+            setContactScale('1');
           }}
           href={'/about'}
         >
@@ -70,10 +76,34 @@ export default function Navbar(): JSX.Element {
             setPortfolioScale('1.15');
             setTermsUseColor(color.navButtonI);
             setTermsUseScale('1');
+            setContactColor(color.navButtonI);
+            setContactScale('1');
           }}
           href={'/portfolio'}
         >
           Projetos
+        </NavbarLink>
+        <NavbarLink
+          style={{
+            color: contactColor,
+            borderColor: contactColor,
+            scale: contactScale
+          }}
+          onClick={() => {
+            setHomeColor(color.navButtonI);
+            setHomeScale('1');
+            setAboutColor(color.navButtonI);
+            setAboutScale('1');
+            setPortfolioColor(color.navButtonI);
+            setPortfolioScale('1');
+            setTermsUseColor(color.navButtonI);
+            setTermsUseScale('1');
+            setContactColor(color.navButtonA);
+            setContactScale('1.15');
+          }}
+          href={'/contact'}
+        >
+          Contato
         </NavbarLink>
         <NavbarLink
           style={{
@@ -90,6 +120,8 @@ export default function Navbar(): JSX.Element {
             setPortfolioScale('1');
             setTermsUseColor(color.navButtonA);
             setTermsUseScale('1.15');
+            setContactColor(color.navButtonI);
+            setContactScale('1');
           }}
           href={'/termsandusage'}
         >
